@@ -1,3 +1,42 @@
+## Engineering focus
+
+This project implements the core mechanics of **tabular Q-learning explicitly**, making the learning loop visible instead of hiding it behind a high-level RL library.
+
+### Core implementation
+
+- Q-table initialization
+- Maximum action-value calculation
+- Greedy action selection
+- Epsilon-greedy exploration
+- Epsilon decay
+- TD target and TD error
+- Q-learning update rule
+- Environment interaction and training episodes
+- Greedy policy extraction
+- Success-rate evaluation
+
+### Learning loop
+
+```text
+State
+  ↓
+Choose action (epsilon-greedy)
+  ↓
+Observe reward + next state
+  ↓
+Compute TD target
+  ↓
+Update Q(state, action)
+  ↓
+Repeat
+```
+
+### What this demonstrates
+
+A focused implementation of reinforcement-learning fundamentals and the relationship between exploration, temporal-difference learning, policy extraction, and evaluation.
+
+---
+
 # Q-Learning on FrozenLake from Scratch
 
 Build a tabular Q-learning agent that learns to navigate the FrozenLake environment using an epsilon-greedy exploration strategy. You'll implement every piece from the Q-table and update rule to training loops and greedy evaluation.
